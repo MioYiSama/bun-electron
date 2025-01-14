@@ -3,16 +3,14 @@ import path from "path";
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1280,
+    height: 720,
     webPreferences: {
-      sandbox: true,
       preload: path.join(process.cwd(), "preload.js"),
     },
   });
 
   win.loadFile("index.html");
-  win.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {
