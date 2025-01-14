@@ -1,10 +1,10 @@
 # bun-electron
 
-# Description
+## Description
 
 Bun + Electron + React + React Router + Shadcn + ESLint
 
-# Run
+## Run
 
 ```bash
 bun install

@@ -1,4 +1,7 @@
-node_modules
-dist/*.js
-bun.lockb
 **/.DS_Store
+
+node_modules
+bun.lockb
+
+dist/**
+!dist/index.html
