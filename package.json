@@ -3,21 +3,34 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "bun run scripts/build.ts",
+    "build": "bun run src/scripts/build.ts && tailwindcss -i src/app/global.css -o dist/global.css",
     "start": "cd dist && electron ."
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
     "@types/bun": "latest",
     "@types/electron": "^1.6.12",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
     "eslint": "^9.18.0",
     "globals": "^15.14.0",
+    "tailwindcss": "^3.4.17",
     "typescript-eslint": "^8.20.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "electron": "^34.0.0"
+    "@radix-ui/react-accordion": "^1.2.2",
+    "@radix-ui/react-slot": "^1.1.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "electron": "^34.0.0",
+    "lucide-react": "^0.471.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.1",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   }
 }

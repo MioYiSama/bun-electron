@@ -6,6 +6,7 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
+      sandbox: true,
       preload: path.join(process.cwd(), "preload.js"),
     },
   });
